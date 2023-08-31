@@ -63,6 +63,19 @@ export default {
             //     type: "text/css",
             //     href: "/assets/css/responsive.css",
             // },
+            {
+                rel: "preconnect",
+                href: "https://fonts.googleapis.com"
+            },
+            {
+                rel: "preconnect",
+                href: "https://fonts.gstatic.com",
+                crossorigin: true
+            },
+            {
+                href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kumbh+Sans:wght@400;500;600;700&display=swap",
+                rel: "stylesheet"
+            }
         ],
         script: [
             {
