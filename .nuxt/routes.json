@@ -1,0 +1,58 @@
+[
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\search\\\\index.vue",
+    "chunkName": "pages/search/index",
+    "_name": "_382aa540"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0dea74f0"
+  },
+  {
+    "name": "author-slug",
+    "path": "/author/:slug",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\author\\\\_slug\\\\index.vue",
+    "chunkName": "pages/author/_slug/index",
+    "_name": "_d3f8b2e6"
+  },
+  {
+    "name": "category-slug",
+    "path": "/category/:slug",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\category\\\\_slug\\\\index.vue",
+    "chunkName": "pages/category/_slug/index",
+    "_name": "_2e47aac0"
+  },
+  {
+    "name": "page-slug",
+    "path": "/page/:slug",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\page\\\\_slug\\\\index.vue",
+    "chunkName": "pages/page/_slug/index",
+    "_name": "_5c870f11"
+  },
+  {
+    "name": "tag-slug",
+    "path": "/tag/:slug",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\tag\\\\_slug\\\\index.vue",
+    "chunkName": "pages/tag/_slug/index",
+    "_name": "_03e467d8"
+  },
+  {
+    "name": "id",
+    "path": "/:id",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\_id\\\\index.vue",
+    "chunkName": "pages/_id/index",
+    "_name": "_30d3bc92"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "D:\\\\Code\\\\ViiT\\\\projects\\\\visualmag-pro\\\\src\\\\pages\\\\_slug\\\\index.vue",
+    "chunkName": "pages/_slug/index",
+    "_name": "_f1ce2f7c"
+  }
+]
