@@ -9,7 +9,6 @@
       <template v-if="beforePostAds">
         <ads-keeper v-if="beforePostAds.type.id === 2" v-bind:selector="`ads-before-post`"
           v-bind:contentAds="beforePostAds"></ads-keeper>
-
         <ads-google v-if="beforePostAds.type.id === 1" v-bind:selector="`ads-before-post`"
           v-bind:contentAds="beforePostAds"></ads-google>
       </template>
@@ -21,11 +20,10 @@
         <h2 class="post-heading">
           {{ postDetail.name }}
         </h2>
-        <p class="post-metadata">Posted by <nuxt-link class="post-author" :to="`/author/${postDetail.creater.username}`">{{ postDetail.creater.name }}</nuxt-link> - <span
+        <p class="post-metadata">Posted by <nuxt-link class="post-author"
+            :to="`/author/${postDetail.creater.username}`">{{ postDetail.creater.name }}</nuxt-link> - <span
             class="post-update">{{ postDetail.creater.created }}</span></p>
       </div>
-
-
       <!-- end post header -->
 
       <!-- entry content -->
@@ -50,16 +48,13 @@
             <template v-if="beforeParagraphAds && index + 1 === beforeParagraphAds.class.number">
               <ads-keeper v-bind:key="`before-${index}`" v-if="beforeParagraphAds.type.id === 2"
                 v-bind:selector="`ads-before-content-${index}`" v-bind:contentAds="beforeParagraphAds"></ads-keeper>
-
               <ads-google v-bind:key="`before-${index}`" v-if="beforeParagraphAds.type.id === 1"
                 v-bind:selector="`ads-before-content-${index}`" v-bind:contentAds="beforeParagraphAds"></ads-google>
             </template>
-
             <template
               v-if="beforeParagraphAds && ((index + 1 - beforeParagraphAds.class.number) % beforeParagraphAds.class.repeat_content_number === 0) && index - beforeParagraphAds.class.number > 0">
               <ads-keeper v-bind:key="`beforứare-${index}`" v-if="beforeParagraphAds.type.id === 2"
                 v-bind:selector="`ads-before-content-${index}`" v-bind:contentAds="beforeParagraphAds"></ads-keeper>
-
               <ads-google v-bind:key="`before-${index}`" v-if="beforeParagraphAds.type.id === 1"
                 v-bind:selector="`ads-before-content-${index}`" v-bind:contentAds="beforeParagraphAds"></ads-google>
             </template>
@@ -71,24 +66,19 @@
             <template v-if="afterParagraphAds && index + 1 === afterParagraphAds.class.number">
               <ads-keeper v-bind:key="`after-${index}`" v-if="afterParagraphAds.type.id === 2"
                 v-bind:selector="`ads-after-content-${index}`" v-bind:contentAds="afterParagraphAds"></ads-keeper>
-
               <ads-google v-bind:key="`after-${index}`" v-if="afterParagraphAds.type.id === 1"
                 v-bind:selector="`ads-before-content-${index}`" v-bind:contentAds="afterParagraphAds"></ads-google>
             </template>
-
             <template
               v-if="afterParagraphAds && ((index + 1 - afterParagraphAds.class.number) % afterParagraphAds.class.repeat_content_number === 0) && index - afterParagraphAds.class.number > 0">
               <ads-keeper v-bind:key="`after-${index}`" v-if="afterParagraphAds.type.id === 2"
                 v-bind:selector="`ads-after-content-${index}`" v-bind:contentAds="afterParagraphAds"></ads-keeper>
-
               <ads-google v-bind:key="`after-${index}`" v-if="afterParagraphAds.type.id === 1"
                 v-bind:selector="`ads-before-content-${index}`" v-bind:contentAds="afterParagraphAds"></ads-google>
             </template>
             <!-- ads after paragraph -->
           </template>
           <!-- post content -->
-
-
 
           <!-- ads after content -->
           <template v-if="afterContentAds">
@@ -107,12 +97,13 @@
       <template v-if="afterPostAds">
         <ads-keeper v-if="beforePostAds.type.id === 2" v-bind:selector="`ads-after-post`"
           v-bind:contentAds="beforePostAds"></ads-keeper>
-
         <ads-google v-if="beforePostAds.type.id === 1" v-bind:selector="`ads-after-post`"
           v-bind:contentAds="beforePostAds"></ads-google>
       </template>
       <!-- ads after post -->
     </article>
+
+    <!-- error -->
     <div class="error" v-if="status !== 1">
       <h1 class="error-title">404 Error – Page Not Found</h1>
       <p class="error-desc">Sorry, the page you are looking for is not available. Maybe you want to perform a
@@ -120,9 +111,9 @@
       </p>
       <div class="search">
         <input type="text" class="search-input" v-model="inputSearch">
-        <button class="search-button"><nuxt-link class="search-text" :to="`/search?keywords=${inputSearch}`">Search</nuxt-link></button>
+        <button class="search-button"><nuxt-link class="search-text"
+            :to="`/search?keywords=${inputSearch}`">Search</nuxt-link></button>
       </div>
-
       <h6 class="sugguest-title">For best search results, mind the following suggestions:</h6>
       <div>
         <ul class="sugguest-list">
@@ -132,5 +123,6 @@
         </ul>
       </div>
     </div>
+    <!-- end error -->
   </main>
 </template>
