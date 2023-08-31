@@ -1491,7 +1491,7 @@ __webpack_require__(3).default("3c39f274", content, true)
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(2);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".heading-section-box{border-bottom:1px solid rgba(0,0,0,.184);height:40px;width:100%}.heading-section,.heading-section-box{align-items:center;display:flex;position:relative}.heading-section{color:#000;font-size:22px;font-weight:700;height:100%;text-transform:capitalize}.heading-section:hover{color:#0099e5}.heading-section:before{border-bottom:2px solid #0099e5;bottom:0;content:\" \";display:inline-block;height:100%;position:absolute;width:100%;z-index:9}.post-title{color:#000;cursor:pointer;font-weight:700}.post-title:hover{color:#0099e5}.gohead{align-items:center;background-color:#0099e5;bottom:0;display:flex;height:30px;justify-content:center;margin:10px;position:fixed;right:0;width:30px}.gohead i{color:#fff;font-size:11px}.layout-flex-horizontal{display:flex}.layout-flex-vertical{display:flex;flex-direction:column}.layout-grid-quad{display:grid;grid-template:repeat(2,1fr)/repeat(2,1fr)}.layout-grid-double{display:grid;grid-template-columns:1fr 1fr;width:100%}.layout-grid-triple{display:grid;grid-template-columns:repeat(3,1fr);margin-top:32px}.layout-flex-primary{display:flex;flex-direction:column;grid-column:1/3}.layout-primary{margin:0 auto;max-width:1180px}.layout-flex-secondary{display:flex;flex-direction:column}.gap20{gap:20px}.gap24{gap:24px}.gap32{gap:32px}.mt32{margin-top:32px}.wrap{flex-wrap:wrap}@media screen and (max-width:1180px){.layout-primary{padding:15px}}@media screen and (max-width:782px){.layout-grid-double,.layout-grid-triple{display:flex;flex-direction:column}}@media screen and (max-width:600px){.layout-grid-quad{display:flex;flex-direction:column}}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "*{box-sizing:border-box;font-family:\"Kumbh Sans\";font-size:16px;margin:0;padding:0}.heading-section-box{border-bottom:1px solid rgba(0,0,0,.184);height:40px;width:100%}.heading-section,.heading-section-box{align-items:center;display:flex;position:relative}.heading-section{color:#000;font-size:22px;font-weight:700;height:100%;text-transform:capitalize}.heading-section:hover{color:#0099e5}.heading-section:before{border-bottom:2px solid #0099e5;bottom:0;content:\" \";display:inline-block;height:100%;position:absolute;width:100%;z-index:9}.post-title{color:#000;cursor:pointer;font-weight:700}.post-title:hover{color:#0099e5}.gohead{align-items:center;background-color:#0099e5;bottom:0;display:flex;height:30px;justify-content:center;margin:10px;position:fixed;right:0;width:30px}.gohead i{color:#fff;font-size:11px}.layout-flex-horizontal{display:flex}.layout-flex-vertical{display:flex;flex-direction:column}.layout-grid-quad{display:grid;grid-template:repeat(2,1fr)/repeat(2,1fr)}.layout-grid-double{display:grid;grid-template-columns:1fr 1fr;width:100%}.layout-grid-triple{display:grid;grid-template-columns:repeat(3,1fr);margin-top:32px}.layout-flex-primary{display:flex;flex-direction:column;grid-column:1/3}.layout-primary{margin:0 auto;max-width:1180px}.layout-flex-secondary{display:flex;flex-direction:column}.gap20{gap:20px}.gap24{gap:24px}.gap32{gap:32px}.mt32{margin-top:32px}.wrap{flex-wrap:wrap}@media screen and (max-width:1180px){.layout-primary{padding:15px}}@media screen and (max-width:782px){.layout-grid-double,.layout-grid-triple{display:flex;flex-direction:column}}@media screen and (max-width:600px){.layout-grid-quad{display:flex;flex-direction:column}}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 module.exports = ___CSS_LOADER_EXPORT___;
@@ -5899,6 +5899,16 @@ async function createApp(ssrContext, config = {}) {
         "rel": "stylesheet",
         "type": "text\u002Fcss",
         "href": "\u002Fassets\u002Fcss\u002Fgenericons\u002Fgenericons\u002Fgenericons.css"
+      }, {
+        "rel": "preconnect",
+        "href": "https:\u002F\u002Ffonts.googleapis.com"
+      }, {
+        "rel": "preconnect",
+        "href": "https:\u002F\u002Ffonts.gstatic.com",
+        "crossorigin": true
+      }, {
+        "href": "https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Inter:wght@400;500;600;700&family=Kumbh+Sans:wght@400;500;600;700&display=swap",
+        "rel": "stylesheet"
       }],
       "script": [{
         "src": "https:\u002F\u002Fpagead2.googlesyndication.com\u002Fpagead\u002Fjs\u002Fadsbygoogle.js",
