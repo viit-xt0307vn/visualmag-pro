@@ -1,5 +1,5 @@
 <script src="./index.js" />
-<style lang="scss" scoped src="./styles.scss"/>
+<style lang="scss" scoped src="./index.scss"/>
 
 <template>
     <section class="layout-flex-vertical gap24">

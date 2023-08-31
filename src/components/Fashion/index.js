@@ -1,4 +1,6 @@
-import { PostLarge, PostTiny, HeadingSection } from "@/components";
+import PostLarge  from "@/components/PostLarge/index.vue";
+import PostTiny from "@/components/PostTiny/index.vue";
+import HeadingSection from "@/components/HeadingSection/index.vue";
 
 export default {
     // data

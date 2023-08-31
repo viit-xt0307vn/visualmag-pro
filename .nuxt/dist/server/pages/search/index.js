@@ -267,7 +267,7 @@ var consts = __webpack_require__(4);
     components
   -------------------------------------------------- */
   components: {
-    Loading: components["l" /* Loading */]
+    Loading: components["k" /* Loading */]
   },
   /* --------------------------------------------------
     asyncData

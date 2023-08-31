@@ -1,4 +1,4 @@
-import { FeaturedItem } from "@/components";
+import FeaturedItem from "@/components/FeaturedItem/index.vue";
 
 export default {
     //  components

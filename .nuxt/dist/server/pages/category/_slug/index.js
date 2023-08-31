@@ -231,8 +231,8 @@ var mixinApp = __webpack_require__(154);
   components
   -------------------------------------------------- */
   components: {
-    Loading: components["l" /* Loading */],
-    PostHorizontal: components["n" /* PostHorizontal */]
+    Loading: components["k" /* Loading */],
+    PostHorizontal: components["m" /* PostHorizontal */]
   },
   /* --------------------------------------------------
   asyncData

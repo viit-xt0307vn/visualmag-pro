@@ -206,22 +206,22 @@ var components = __webpack_require__(9);
   components
   -------------------------------------------------- */
   components: {
-    Loading: components["l" /* Loading */],
+    Loading: components["k" /* Loading */],
     Featured: components["f" /* Featured */],
-    HeadingSection: components["i" /* HeadingSection */],
-    PostLarge: components["o" /* PostLarge */],
-    PostTiny: components["s" /* PostTiny */],
-    PostSmall: components["r" /* PostSmall */],
-    IconsConnect: components["j" /* IconsConnect */],
-    PostMedium: components["p" /* PostMedium */],
-    PostHorizontal: components["n" /* PostHorizontal */],
-    Football: components["h" /* Football */],
-    Nail: components["m" /* Nail */],
+    HeadingSection: components["h" /* HeadingSection */],
+    PostLarge: components["n" /* PostLarge */],
+    PostTiny: components["r" /* PostTiny */],
+    PostSmall: components["q" /* PostSmall */],
+    IconsConnect: components["i" /* IconsConnect */],
+    PostMedium: components["o" /* PostMedium */],
+    PostHorizontal: components["m" /* PostHorizontal */],
+    Football: components["g" /* Football */],
+    Nail: components["l" /* Nail */],
     Car: components["b" /* Car */],
     Fashion: components["e" /* Fashion */],
     Baby: components["a" /* Baby */],
-    Tattoo: components["u" /* Tattoo */],
-    Lifestyle: components["k" /* Lifestyle */]
+    Tattoo: components["t" /* Tattoo */],
+    Lifestyle: components["j" /* Lifestyle */]
   },
   /* --------------------------------------------------
   asyncData
