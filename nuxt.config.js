@@ -53,29 +53,19 @@ export default {
                 type: "text/css",
                 href: "/assets/css/genericons/genericons/genericons.css",
             },
-            // {
-            //     rel: "stylesheet",
-            //     type: "text/css",
-            //     href: "/assets/css/styles.css",
-            // },
-            // {
-            //     rel: "stylesheet",
-            //     type: "text/css",
-            //     href: "/assets/css/responsive.css",
-            // },
             {
                 rel: "preconnect",
-                href: "https://fonts.googleapis.com"
+                href: "https://fonts.googleapis.com",
             },
             {
                 rel: "preconnect",
                 href: "https://fonts.gstatic.com",
-                crossorigin: true
+                crossorigin: true,
             },
             {
                 href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kumbh+Sans:wght@400;500;600;700&display=swap",
-                rel: "stylesheet"
-            }
+                rel: "stylesheet",
+            },
         ],
         script: [
             {
@@ -98,9 +88,9 @@ export default {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
-        '@fortawesome/fontawesome-svg-core/styles.css',
-        '@/assets/css/reset.css',
-        '@/assets/sass/global.scss',
+        "@fortawesome/fontawesome-svg-core/styles.css",
+        "@/assets/css/reset.css",
+        "@/assets/sass/global.scss",
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -186,8 +176,10 @@ export default {
     generate: {
         fallback: false,
     },
-    serverMiddleware: [{
-        path: "/json/getJson",
-        handler: "~/server-middleware/json"
-    }],
+    serverMiddleware: [
+        {
+            path: "/json/getJson",
+            handler: "~/server-middleware/json",
+        },
+    ],
 };

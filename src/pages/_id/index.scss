@@ -103,6 +103,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px 0;
+    width: 100%;
 
     &-title {
         font-size: 35px;
@@ -129,6 +130,10 @@
         padding: 5px 0px 5px 10px;
         height: 100%;
         font-weight: 600;
+        flex: 1;
+        &:focus {
+            border: 1px solid #0099e5;
+        }
     }
 
     &-button {
@@ -138,7 +143,10 @@
         justify-content: center;
         align-items: center;
         background-color: #0099e5;
-        color: #ffffff;
+    }
+
+    &-text {
+        color: #FFFFFF;
     }
 }
 

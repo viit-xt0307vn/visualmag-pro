@@ -30,7 +30,7 @@
 
                 <!-- Follow us -->
                 <section class="followus">
-                    <HeadingSection nameHeading="Follow us" />
+                    <HeadingSection name="Follow us" slug="" />
                     <IconsConnect />
                 </section>
 

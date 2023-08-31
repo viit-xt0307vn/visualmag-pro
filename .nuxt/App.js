@@ -2,7 +2,7 @@ import Vue from 'vue'
 import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } from 'ufo'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-import NuxtError from '..\\src\\layouts\\error.vue'
+import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
 import '..\\node_modules\\@fortawesome\\fontawesome-svg-core\\styles.css'
@@ -11,11 +11,12 @@ import '..\\src\\assets\\css\\reset.css'
 
 import '..\\src\\assets\\sass\\global.scss'
 
-import _6f6c098b from '..\\src\\layouts\\default.vue'
+import _55b2634e from '..\\src\\layouts\\default\\index.vue'
+import _124ccf56 from '..\\src\\layouts\\error\\index.vue'
 import _a033dbc8 from '..\\src\\layouts\\MainLayout\\index.vue'
-import _3f711fb9 from '..\\src\\layouts\\TopLayout\\TopLayout.vue'
+import _6f6c098b from './layouts/default.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b),"_MainLayout/index": sanitizeComponent(_a033dbc8),"_TopLayout/TopLayout": sanitizeComponent(_3f711fb9) }
+const layouts = { "_default/index": sanitizeComponent(_55b2634e),"_error/index": sanitizeComponent(_124ccf56),"_MainLayout/index": sanitizeComponent(_a033dbc8),"_default": sanitizeComponent(_6f6c098b) }
 
 export default {
   render (h, props) {

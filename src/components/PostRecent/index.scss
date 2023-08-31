@@ -1,0 +1,23 @@
+.post-recent {
+    display: flex;
+    gap: 15px;
+
+    &-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+
+    &-title {
+        display: inline-block;
+
+        &:hover {
+            color: #0099e5;
+        }
+    }
+
+    &-date {
+        margin-top: 6px;
+        color: #888888;
+    }
+}

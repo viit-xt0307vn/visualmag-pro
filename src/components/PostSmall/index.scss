@@ -1,0 +1,17 @@
+.post-small {
+    width: 100%;
+
+    &-image {
+        width: 100%;
+        height: auto;
+    }
+
+    &-caption {
+        margin-top: 10px;
+        font-weight: 400;
+
+        &:hover {
+            color: #0099e5;
+        }
+    }
+}

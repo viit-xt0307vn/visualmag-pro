@@ -1,0 +1,25 @@
+.post {
+    &-tiny {
+        display: flex;
+        gap: 15px;
+
+        &-image {
+            width: 120px;
+            height: 80px;
+        }
+
+        &-title {
+            display: inline-block;
+            display: -webkit-box;
+            max-width: 200px;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        &-date {
+            margin-top: 6px;
+            color: #888888;
+        }
+    }
+}

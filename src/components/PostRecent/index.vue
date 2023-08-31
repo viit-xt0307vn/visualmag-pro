@@ -1,3 +1,6 @@
+<script src="./index.js" />
+<style lang="scss" scoped src="./index.scss"/>
+
 <template>
   <div class="post-recent">
     <nuxt-link class="post-recent" :to="`/${post?.id}`">
@@ -12,40 +15,3 @@
     </div>
   </div>
 </template>
-
-<script>
-  export default {
-    props: {
-      post: {
-        type: Object,
-        default: () => {}
-      }
-    }
-  }
-</script>
-
-<style lang="scss" scoped>
-.post-recent {
-  display: flex;
-  gap: 15px;
-
-  &-image {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-  }
-
-  &-title {
-    display: inline-block;
-
-    &:hover {
-      color: #0099e5;
-    }
-  }
-
-  &-date {
-    margin-top: 6px;
-    color: #888888;
-  }
-}
-</style>

@@ -1,30 +1,32 @@
-import WidgetOneColumn from "@/components/WidgetOneColumn/WidgetOneColumn.vue";
-import Loading from "@/components/Loading/Loading.vue";
 import mixinApp from "@/mixins/mixinApp.js";
-import Featured from "@/components/Featured";
-import HeadingSection from "@/components/HeadingSection";
-import PostLarge from "@/components/PostLarge";
-import PostTiny from "@/components/PostTiny";
-import PostSmall from "@/components/PostSmall";
-import IconsConnect from "@/components/IconsConnect";
-import PostMedium from "@/components/PostMedium";
-import PostHorizontal from "@/components/PostHorizontal";
-import Football from "@/components/Football";
-import Nail from "@/components/Nail";
-import Car from "@/components/Car";
-import Fashion from "@/components/Fashion";
-import Baby from "@/components/Baby";
-import Tattoo from "@/components/Tattoo";
-import Lifestyle from "@/components/Lifestyle";
+import {
+    Featured,
+    HeadingSection,
+    PostLarge,
+    PostTiny,
+    PostSmall,
+    IconsConnect,
+    PostMedium,
+    PostHorizontal,
+    Football,
+    Nail,
+    Car,
+    Fashion,
+    Baby,
+    Tattoo,
+    Lifestyle,
+    Loading
+} from "@/components";
 
 export default {
+    layout: "default/index",
+
     mixins: [mixinApp],
 
     /* --------------------------------------------------
     components
   -------------------------------------------------- */
     components: {
-        WidgetOneColumn,
         Loading,
         Featured,
         HeadingSection,
@@ -71,7 +73,8 @@ export default {
             pageData.totalPage = response.data.total_page;
             pageData.pageNo++;
             pageData.metaDescription = "";
-            pageData.metaYoastSeo = context.store.state.common.storeLoadInit.settings["yoast-seo"];
+            pageData.metaYoastSeo =
+                context.store.state.common.storeLoadInit.settings["yoast-seo"];
         }
         context.$setLoading(false);
         return pageData;

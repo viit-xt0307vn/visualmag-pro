@@ -1,0 +1,31 @@
+.post-large {
+    &-image {
+        width: 100%;
+    }
+
+    &-metadata {
+        display: flex;
+        gap: 15px;
+        margin-top: 16px;
+    }
+
+    &-title {
+        margin-top: 10px;
+        font-size: 21.6px;
+
+        &:hover {
+            color: #0099e5;
+        }
+    }
+
+    &-desc {
+        display: -webkit-box;
+        width: 100%;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: #888888;
+        margin-top: 10px;
+        line-height: 22px;
+    }
+}

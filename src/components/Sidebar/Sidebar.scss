@@ -1,8 +1,0 @@
-.widget-area {
-  &.sidebar {
-    @media only screen and (max-width: 959px) {
-      display: flex;
-      flex-flow: column-reverse;
-    }
-  }
-}

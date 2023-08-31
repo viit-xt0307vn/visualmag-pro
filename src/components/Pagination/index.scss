@@ -1,0 +1,17 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages {
+    display: flex;
+    gap: 20px;
+}
+
+.page,
+.btn {
+    padding: 0px 12px;
+    line-height: 36px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+}

@@ -1,5 +1,4 @@
-import PostItemSearch from '@/components/PostItemSearch/PostItemSearch.vue'
-import Loading from '@/components/Loading/Loading.vue';
+import {Loading} from '@/components';
 import mixinApp from '@/mixins/mixinApp.js'
 import * as TYPES from '@/consts'
 
@@ -33,7 +32,6 @@ export default {
     components
   -------------------------------------------------- */
   components: {
-    PostItemSearch,
     Loading,
   },
 

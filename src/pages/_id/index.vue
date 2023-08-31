@@ -113,14 +113,14 @@
       </template>
       <!-- ads after post -->
     </article>
-    <div class="error" v-if="status">
+    <div class="error" v-if="status !== 1">
       <h1 class="error-title">404 Error – Page Not Found</h1>
       <p class="error-desc">Sorry, the page you are looking for is not available. Maybe you want to perform a
         search?
       </p>
       <div class="search">
-        <input type="text" class="search-input">
-        <button class="search-button">Search</button>
+        <input type="text" class="search-input" v-model="inputSearch">
+        <button class="search-button"><nuxt-link class="search-text" :to="`/search?keywords=${inputSearch}`">Search</nuxt-link></button>
       </div>
 
       <h6 class="sugguest-title">For best search results, mind the following suggestions:</h6>

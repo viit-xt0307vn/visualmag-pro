@@ -1,6 +1,4 @@
-import PostItemList from "@/components/PostItemList/PostItemList.vue";
-import PostHorizontal from "@/components/PostHorizontal";
-import Loading from "@/components/Loading/Loading.vue";
+import { PostHorizontal, Loading } from "@/components";
 import mixinApp from "@/mixins/mixinApp.js";
 
 export default {
@@ -31,7 +29,6 @@ export default {
     components
   -------------------------------------------------- */
     components: {
-        PostItemList,
         Loading,
         PostHorizontal,
     },
@@ -100,7 +97,7 @@ export default {
             );
             if (response.data.status_code === 1) {
                 this.posts.push(...response.data.data[0].posts);
-                console.log(this.posts)
+                console.log(this.posts);
             }
             this.pageNo++;
         },

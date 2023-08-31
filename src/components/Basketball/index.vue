@@ -1,6 +1,9 @@
+<script src="./index.js" />
+<style lang="scss" scoped src="./index.scss"/>
+
 <template>
     <section class="layout-flex-vertical gap24">
-        <HeadingSection nameHeading="Nail" />
+        <HeadingSection name="Nail" slug="nail" />
         <div class="layout-flex-horizontal gap24">
             <PostSmall
                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
@@ -14,16 +17,3 @@
         </div>
     </section>
 </template>
-
-<script>
-import HeadingSection from "@/components/HeadingSection";
-import PostSmall from "@/components/PostSmall";
-export default {
-    components: {
-        PostSmall,
-        HeadingSection
-    }
-}
-</script>
-
-<style lang="scss" scoped></style>

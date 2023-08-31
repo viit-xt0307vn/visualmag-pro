@@ -1,3 +1,6 @@
+<script src="./index.js"/>
+<style lang="scss" src="./index.scss" />
+
 <template>
   <div class="post-tiny">
     <nuxt-link :to="`/${post?.id}/`" class="post-tiny">
@@ -13,44 +16,3 @@
 
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    post: {
-      type: Object,
-      default: () => { }
-    }
-  }
-}
-</script>
-
-<style lang="scss">
-.post {
-  &-tiny {
-    display: flex;
-    gap: 15px;
-
-    &-image {
-      width: 120px;
-      height: 80px;
-    }
-
-    &-title {
-      display: inline-block;
-      display: -webkit-box;
-      max-width: 200px;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-
-    }
-
-    &-date {
-      margin-top: 6px;
-      color: #888888;
-    }
-  }
-
-}
-</style>

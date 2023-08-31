@@ -1,5 +1,5 @@
 import mixinApp from "@/mixins/mixinApp.js";
-import Categories from "@/components/Categories";
+import { Categories } from "@/components";
 import * as TYPES from "@/consts";
 
 export default {
@@ -33,6 +33,7 @@ export default {
             testAds: {
                 body: '<!-- Composite Start --> \n<div id="M886209ScriptRootC1465593"></div> \n<script src="https://jsc.adskeeper.com/m/b/m.baly.online.1465593.js" async></script> \n<!-- Composite End -->',
             },
+            inputSearch: null,
         };
     },
 

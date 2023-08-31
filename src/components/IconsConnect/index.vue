@@ -1,3 +1,6 @@
+<script src="./index.js" />
+<style lang="scss" scoped src="./index.scss"/>
+
 <template>
     <div class="icons">
         <div class="icon-box">
@@ -38,43 +41,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-.icons {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 9px;
-}
-
-.icon-box {
-    display: flex;
-    height: 33px;
-    gap: 10px;
-    align-items: center;
-}
-
-.icon-box:hover {
-    transform: scale(1.1);
-    transition: all 0.1s linear;
-}
-
-.icon {
-    color: var(--icon-clr);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-}
-
-.followus-name {
-    cursor: pointer;
-}
-</style>

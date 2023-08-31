@@ -1,3 +1,6 @@
+<script setup src="./index.js" />
+<style lang="scss" scoped src="./index.scss" />
+
 <template>
     <nav class="pagination">
         <button class="btn">Previous page</button>
@@ -9,28 +12,3 @@
         <button class="btn">Next page</button>
     </nav>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-.pagination {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.pages {
-    display: flex;
-    gap: 20px;
-}
-
-.page,
-.btn {
-    padding: 0px 12px;
-    line-height: 36px;
-    font-size: 14px;
-    background-color: #F0F0F0;
-}
-</style>
